@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+    box-sizing: border-box;
+}
+
+/*css reset*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section {
+    width: 100%;
+    float: left;
+    height: 130vh;
+    position: relative;
+}
+
+
+#home,
+#about,
+#product,
+#pricing,
+#gallery {
+
+    background: #37b8ab;
+    background: -webkit-linear-gradient(to right, #37b8ab, #0f1e64);
+    background: linear-gradient(to right, #37b8ab, #0f1e64);
+}
+
+
+/* #about {
+   
+}
+
+#product {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(248deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+#pricing {
+    background-color: #3C2C3E;
+}
+
+#contact {
+    background-color: #B52B65;
+} */
+
+h1 {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* whatsapp */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+
+}
+
+.box {
+    margin-left: 90px;
+    margin-right: 100px;
+    padding-top: 90%;
+    margin-top: 150px;
+    color: black;
+    border: 4px solid rgb(87, 131, 168);
+    padding: 10px;
+    outline: #4CAF50 solid 11px;
+
+}
+
+.dive {
+    font-size: large;
+    font-family: serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* .trt1{
+    font-size: 20px;
+}
+.trt {
+    margin-top: 200px;
+    font-size: large;
+    font-family: serif;
+    text-align: justify;
+    text-justify: inter-word;
+} */
+
+image {
+    width: 100px;
+    height: 100px;
+}
+
+/* two */
+.div1 {
+    width: 50%;
+    float: left;
+
+}
+
+.div2 {
+    width: 50%;
+    float: right;
+
+}
+
+.cont {
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+
+
+
+}
+
+.cont .nav {
+    cursor: pointer;
+    padding: 2%;
+}
+
+/* register form */
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2f2c2c;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container.signin {
+    text-align: center;
+    color: #777;
+}
+
+/* php */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.error-message {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* gallery */
+/* Style for the form container */
+.form-container {
+    max-width: 300px;
+
+    margin-top: 100px;
+    margin: 100px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the upload form */
+.upload-form {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Style for the file input */
+.upload-input {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Style for the submit button */
+.upload-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the gallery container */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Style for individual gallery items */
+.gallery-item {
+    width: 150px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style for the uploaded images */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    /* this will add equal space between each image */
+}
+
+
+.card-img-top {
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.card-body {
+    padding: 25px;
+    margin-top: -15px;
+}
+
+h3,
+h5 {
+    color: rgb(255, 255, 255);
+}
+
+/* call button */
+button {
+    height: 3em;
+    width: 8em;
+    border: none;
+    border-radius: 10em;
+    background: #016DD9;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+button:hover {
+    animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+.bg {
+    background-image: url("images/offset.jpg");
+    height: 18%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.txt {
+    font-size: 40px;
+    margin-top: 500px;
+    margin-left: 550px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.txt2 {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.txt3 {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: justify;
+}

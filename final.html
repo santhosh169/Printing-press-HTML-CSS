@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thilaka Printers</title>
+    <link rel="stylesheet" href="style.css">
+    <script> 
+     function validateForm() {
+        // Email validation
+        var emailInput = document.getElementById('email');
+        var emailValue = emailInput.value.trim();
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(emailValue)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+
+        // Phone validation
+        var phoneInput = document.getElementById('phone');
+        var phoneValue = phoneInput.value.trim();
+        var phoneRegex = /^\d{10}$/; // 10-digit phone number
+
+        if (!phoneRegex.test(phoneValue)) {
+            alert('Please enter a valid 10-digit phone number.');
+            return false;
+        }
+
+        return true;
+    }</script>
+</head>
+
+<body>
+
+    <section id="home">
+        <div class="bg">
+            <header>
+                <a href=" %%&^^"><img class="photo" src="images/Thilaka printing press.jpg" alt=""></a>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <!-- <li><a href="#pricing">Pricing</a></li> -->
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </header>
+            <h1>THILAKA PRINTERS
+
+                <svg style="display:block; margin: 0 auto;" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="600" viewBox="0 0 300 150">
+                    <defs>
+                        <g id="feather">
+                            <path d="M150,150 l-30,-100 a30,30 0 0,1 60,0 Z" fill="#7DC65C"
+                                style="fill-opacity: 0.85;" />
+                        </g>
+                        <g id="crown">
+                            <path d="M150,75 l-1.25,-6 a1.25,1.25 0 0,1 2.5,0 Z" fill="#fff" />
+                        </g>
+                    </defs>
+
+                    <use xlink:href="#feather" x="0" y="0" />
+                    <use xlink:href="#feather" x="0" y="0" transform="rotate(23,150,150)">
+                        <animateTransform id="anim1" attributeName="transform" attributeType="XML" type="rotate"
+                            from="23,150,150" to="20,150,150" dur="1s" begin="0s;anim2.end" />
+                        <animateTransform id="anim2" attributeName="transform" attributeType="XML" type="rotate"
+                            from="20,150,150" to="23,150,150" dur="1s" begin="anim1.end" />
+                    </use>
+                    <use xlink:href="#feather" x="0" y="0" transform="rotate(46,150,150)">
+                        <animateTransform id="anim1" attributeName="transform" attributeType="XML" type="rotate"
+                            from="46,150,150" to="40,150,150" dur="1s" begin="0s;anim2.end" />
+                        <animateTransform id="anim2" attributeName="transform" attributeType="XML" type="rotate"
+                            from="40,150,150" to="46,150,150" dur="1s" begin="anim1.end" />
+                    </use>
+                    <use xlink:href="#feather" x="0" y="0" transform="rotate(69,150,150)">
+                        <animateTransform id="anim1" attributeName="transform" attributeType="XML" type="rotate"
+                            from="69,150,150" to="60,150,150" dur="1s" begin="0s;anim2.end" />
+                        <animateTransform id="anim2" attributeName="transform" attributeType="XML" type="rotate"
+                            from="60,150,150" to="69,150,150" dur="1s" begin="anim1.end" />
+                    </use>
+                    <use xlink:href="#feather" x="0" y="0" transform="rotate(-23,150,150)">
+                        <animateTransform id="anim1" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-23,150,150" to="-20,150,150" dur="1s" begin="0s;anim2.end" />
+                        <animateTransform id="anim2" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-20,150,150" to="-23,150,150" dur="1s" begin="anim1.end" />
+                    </use>
+                    <use xlink:href="#feather" x="0" y="0" transform="rotate(-46,150,150)">
+                        <animateTransform id="anim1" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-46,150,150" to="-40,150,150" dur="1s" begin="0s;anim2.end" />
+                        <animateTransform id="anim2" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-40,150,150" to="-46,150,150" dur="1s" begin="anim1.end" />
+                    </use>
+                    <use xlink:href="#feather" x="0" y="0" transform="rotate(-69,150,150)">
+                        <animateTransform id="anim1" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-69,150,150" to="-60,150,150" dur="1s" begin="0s;anim2.end" />
+                        <animateTransform id="anim2" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-60,150,150" to="-69,150,150" dur="1s" begin="anim1.end" />
+                    </use>
+
+                    <g transform="rotate(-45,150,75)">
+                        <use xlink:href="#crown" x="0" y="0" />
+                        <use xlink:href="#crown" x="0" y="0" transform="translate(1, 0) rotate(30,150,75)" />
+                        <use xlink:href="#crown" x="0" y="0" transform="translate(-1, 0) rotate(-30,150,75)" />
+                        <animateTransform id="anim1" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-45,150,75" to="-60,150,75" dur="1s" begin="0s;anim2.end" />
+                        <animateTransform id="anim2" attributeName="transform" attributeType="XML" type="rotate"
+                            from="-60,150,75" to="-45,150,75" dur="1s" begin="anim1.end" />
+                    </g>
+
+                    <g>
+                        <path
+                            d="M105,145 c60,-10 10,-95 40,-80 l5,0 c-30,5 45,40 0,110 M139,66 a1,1 0 1,0 2,0 a1,1 0 1,0 -2,0"
+                            fill="#fff" fill-rule="evenodd" transform="translate(0, 5) rotate(10,105,145)" />
+                    </g>
+                    <br>
+
+                </svg>
+                <marquee>உலகின் படைப்புகளெல்லாம் உழைப்பின் சிதறல்களே<br> </marquee>
+            </h1>
+
+        </div>
+        <div class="txt">OFFSET_PRINTING</div>
+
+    </section>
+
+    <section id="about">
+
+        <div class="div1">
+            <div class="box">
+                <h3>Histroy of Printing press</h3><br>
+                <div class="dive">Established in the year 1990, Thilaka Printers in Dharapuram HO, Dharapuram
+                    is a top player in the category Printing Press in the Dharapuram. This well-known
+                    establishment acts as a one-stop destination servicing customers both local
+                    and from other parts of Dharapuram. Over the course of its journey, this business has
+                    established a firm foothold in it's industry. The belief that customer satisfaction
+                    is as important as their products and services, have helped this establishment garner a vast
+                    base of customers, which continues to grow by the day. This business employs individuals that
+                    are dedicated towards their respective roles and put in a lot of effort to achieve the common
+                    vision and larger goals of the company. In the near future, this business aims to expand
+                    its line of products and services and cater to a larger client base. In Dharapuram, this
+                    establishment occupies a prominent location in Dharapuram HO. It is an effortless task in
+                    commuting
+                    to this establishment as there are various modes of transport readily available. It is at Cloth
+                    Bazeer Street, Near Thirupathi Vengadeshwara Silk, which makes it easy for first-time visitors
+                    in
+                    locating this establishment. It is known to provide top service in the following categories:
+                    Computer Software Developers For Printing Press, Printing Press, Offset Printers, Printing Pres
+                    Manufacturers, Printing Services, Pre Press Printing Services, Pre Press Equipment Dealers,
+                    Flexographic Printing Machine Manufacturers.<br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="div2">
+            <div class="box">
+                <image>
+                    <marquee>
+                        <img src="images/1pp.png" width="350" height="350">
+                        <img src="images/2pp.png" width="350" height="350">
+                        <img src="images/3pp.png" width="350" height="350">
+
+                    </marquee>
+                </image>
+            </div>
+            <div class="box">
+                <div class="dive">
+                    Address<br><br>
+                    Door No:286, Cloth Bazeer Street,<br> Dharapuram HO, Dharapuram - 638656 <br>(Near Thirupathi
+                    Vengadeshwara
+                    Silk)<br><br>
+                    <li>If you want to customize your service kindly contact&nbsp;&nbsp;&nbsp;&nbsp;<button> <a
+                                href="tel:+9107947131399">Call Now
+                            </a></button>&nbsp;&nbsp;&nbsp;Enquiry Now for more details &#128512;
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="product">
+        <div class="div1">
+            <div class="box">
+                <div class="txt2">Multicolour Offset Printing
+                </div><br>
+                <div class="txt3">Offset printing is one of the most cheapest technique used to create superior quality
+                    printing in
+                    commercial printing measures. In the whole process of printing, firstly the inked image is carry
+                    over
+                    from a plate to rubber blanket and then finally to printing surface. The paper used in them is
+                    either
+                    sheet fed litho or web fed litho. Along with paper, several other materials are also used like
+                    rubber,
+                    fabric and wood.</div>
+
+            </div>
+            <div class="cont">
+                <section class="nav">
+                    <img src="images/wed.png" />
+
+                    <a href="wed.html">
+                        <p>Wedding Card</p>
+                    </a>
+
+                </section>
+                <section class="nav">
+                    <img src="images/note.png" />
+                    <a href="note.html">
+                        <p>NoteBooks</p>
+                    </a>
+                </section>
+                <section class="nav">
+                    <img src="images/vis.png" />
+                    <a href="vi.html">
+                        <p>Business Card</p>
+                    </a>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="div2">
+            
+            <form action="reg.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+                <div class="container">
+
+                    <p>Please fill in the details to register your service</p>
+                    <hr>
+                    <label for="name"><b>Enter Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" required>
+
+                    <label for="email"><b>Enter Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="text" placeholder="Enter Phone" name="phone" id="phone" required>
+            
+
+                    <label for="ser"><b>Enter Service</b></label>
+                    <input type="text" placeholder="Enter Service" name="ser" required>
+
+                    <label for="qty"><b>Quantity</b></label>
+                    <input type="text" placeholder="Quantity" name="qty" required>
+
+                    <label for="image">Choose Image:</label>
+                    <input type="file" name="image" id="image" accept="image/*" >
+                    <br>
+                    <input type="submit" value="Upload Image">
+
+                    <hr>
+
+                    <button type="submit" class="registerbtn"><strong>Register</strong></button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <section id="gallery">
+
+        <div class="form-container">
+            <form class="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+                Select Image to Upload:
+                <input type="file" name="fileToUpload" id="fileToUpload" class="upload-input">
+                <input type="submit" value="Upload Image" name="submit" class="upload-button">
+            </form>
+        </div>
+
+
+        <!-- <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="uploads/" alt="Uploaded Image">
+            </div>
+
+        </div> -->
+
+        <div class="image-row">
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/1.jpg" class="card-img-top" alt="..." width="350" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title"> customer satisfaction&#128516</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/2.jpg" class="card-img-top" alt="..." width="350" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title">customer satisfaction &#128151</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/3.jpg" class="card-img-top" alt="..." width="350" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title"> customer satisfaction &#128525</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/4.jpg" class="card-img-top" alt="..." width="350" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title">customer satisfaction &#128151</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- whatsapp -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <a href="https:/wa.me/+919443328396" target="_blank" class="whatsapp_float"><i
+            class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+
+</body>
+
+</html>
